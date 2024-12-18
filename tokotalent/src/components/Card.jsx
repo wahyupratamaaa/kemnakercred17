@@ -11,8 +11,9 @@ const Card = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/produk")
+      .get("https://credkemnaker.vercel.app/produk")
       .then((response) => {
+        console.log(response.data);
         setProducts(response.data);
         setLoading(false);
       })

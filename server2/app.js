@@ -2,12 +2,18 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const dotenv = require("dotenv");
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const admin = require("firebase-admin");
 dotenv.config();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 // Konfigurasi Firebase
 var serviceAccount = require("../server2/kemnaker17-firebase-adminsdk-d0r51-ffbdb0115b.json");
