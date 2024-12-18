@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const port = process.env.PORT || 3000;
 const admin = require("firebase-admin");
 
+// Middleware CORS
 app.use(
   cors({
     origin: "*",
@@ -12,7 +12,7 @@ app.use(
   })
 );
 
-var serviceAccount = require("./kemnaker17-firebase-adminsdk-d0r51-ffbdb0115b.json");
+const serviceAccount = JSON.parse(process.env.FIREBASE_ADMIN_KEY);
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL:
@@ -21,17 +21,18 @@ admin.initializeApp({
 
 const db = admin.database();
 
+// Root route
 app.get("/", (req, res) => {
   res.send("Hello Wahyu Pratama!");
 });
 
+// Produk route
 app.get("/produk", async (req, res) => {
   try {
     const ref = db.ref("products");
     ref.once("value", (snapshot) => {
       const data = snapshot.val();
       const filteredData = Object.values(data).filter((item) => item !== null);
-
       res.json(filteredData);
     });
   } catch (error) {
@@ -42,6 +43,4 @@ app.get("/produk", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+module.exports = app; // Jangan gunakan app.listen
