@@ -13,7 +13,6 @@ const Card = () => {
     axios
       .get("http://localhost:3000/produk")
       .then((response) => {
-        console.log(response.data);
         setProducts(response.data);
         setLoading(false);
       })

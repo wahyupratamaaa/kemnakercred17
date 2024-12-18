@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "app/produk.js",
+      "src": "server2/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/produk",
-      "dest": "/app/produk.js"
+      "src": "/(.*)",
+      "dest": "/index.js"
     }
   ]
 }
