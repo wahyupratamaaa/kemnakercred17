@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "description": "Egg & Cheese Muffin",
+      "id": 1,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/December2024/BmFW8KL1cpI7n9SP74ai.png",
+      "name": "Egg & Cheese Muffin",
+      "price": 25000
+    },
+    {
+      "description": "Chicken Muffin",
+      "id": 2,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/UGxWzYmlGDLUpzhrhaBT.webp",
+      "name": "Chicken Muffin",
+      "price": 26000
+    },
+    {
+      "description": "Sausage McMuffin",
+      "id": 3,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/e4uy88JKbOpcdoJ3EXJO.webp",
+      "name": "Sausage McMuffin",
+      "price": 27000
+    },
+    {
+      "description": "Egg McMuffin",
+      "id": 4,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/PYlJyb4lmSQcFsXktwmC.webp",
+      "name": "Egg McMuffin",
+      "price": 28000
+    },
+    {
+      "description": "Chicken Muffin with Egg",
+      "id": 5,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/ILs2kh4ej7YjJzIfsf2d.webp",
+      "name": "Chicken Muffin with Egg",
+      "price": 29000
+    },
+    {
+      "description": "Sausage McMuffin with Egg",
+      "id": 6,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/9hn3Gu6SwCg8TNBMaXFr.webp",
+      "name": "Sausage McMuffin with Egg",
+      "price": 30000
+    },
+    {
+      "description": "Sausage Wrap",
+      "id": 7,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/l47DeJBbY77Th47JfIAn.webp",
+      "name": "Sausage Wrap",
+      "price": 31000
+    },
+    {
+      "description": "Big Breakfast",
+      "id": 8,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/November2023/moYXCc5o7XBlsQhLAoxr.webp",
+      "name": "Big Breakfast",
+      "price": 32000
+    },
+    {
+      "description": "Breakfast Wrap",
+      "id": 9,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/tq8zKUFnTgzGofSWc0jC.webp",
+      "name": "Breakfast Wrap",
+      "price": 33000
+    },
+    {
+      "description": "Hotcakes 3 pcs",
+      "id": 10,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/JpZhd7fyCdfzw5ahH1m4.webp",
+      "name": "Hotcakes 3 pcs",
+      "price": 34000
+    },
+    {
+      "description": "Hotcakes 2 pcs",
+      "id": 11,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/jm0GYUcUqJZryNOTIhIw.webp",
+      "name": "Hotcakes 2 pcs",
+      "price": 35000
+    },
+    {
+      "description": "Hashbrown",
+      "id": 12,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/CxinznSnispVQBobjtDt.webp",
+      "name": "Hashbrown",
+      "price": 15000
+    },
+    {
+      "description": "Nasi Uduk McD",
+      "id": 13,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/uQSETIkvtYba9RVGHiGe.webp",
+      "name": "Nasi Uduk McD",
+      "price": 20000
+    },
+    {
+      "description": "Bubur Ayam McD",
+      "id": 14,
+      "image": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/4HzEEvFji2YAKLwrXgXA.webp",
+      "name": "Bubur Ayam McD",
+      "price": 18000
+    }
+  ]
+}

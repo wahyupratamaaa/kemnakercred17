@@ -32,7 +32,7 @@ const Modal = ({ product, isOpen, closeModal }) => {
         <div
           className="w-full h-96 bg-cover bg-center rounded-lg mt-4"
           style={{
-            backgroundImage: `url(${product.image})`,
+            backgroundImage: `url(${product.image || "kosong"})`,
             objectFit: "cover",
           }}
         >

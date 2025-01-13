@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const port = process.env.PORT || 3000;
+const port = 3000;
 const admin = require("firebase-admin");
 
 app.use(
@@ -12,11 +12,12 @@ app.use(
   })
 );
 
-var serviceAccount = require("./kemnaker17-firebase-adminsdk-d0r51-ffbdb0115b.json");
+var serviceAccount = require("./dburgent-da356-firebase-adminsdk-e9ezv-bcd8824aee.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
+
   databaseURL:
-    "https://kemnaker17-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "https://dburgent-da356-default-rtdb.asia-southeast1.firebasedatabase.app",
 });
 
 const db = admin.database();
@@ -28,20 +29,15 @@ app.get("/", (req, res) => {
 app.get("/produk", async (req, res) => {
   try {
     const ref = db.ref("products");
-    ref.once("value", (snapshot) => {
-      const data = snapshot.val();
-      const filteredData = Object.values(data).filter((item) => item !== null);
-
-      res.json(filteredData);
-    });
+    const snapshot = await ref.once("value");
+    const data = snapshot.val();
+    res.json(data);
   } catch (error) {
-    console.error("Error fetching products:", error);
-    res.status(500).json({
-      message: "Terjadi kesalahan saat mengambil data produk dari Firebase.",
-    });
+    console.error("Error fetching data", error);
+    res.status(500).json({ error: "Failed to fetch data" });
   }
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`http://localhost:${port}`);
 });

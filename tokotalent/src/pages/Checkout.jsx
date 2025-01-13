@@ -1,6 +1,6 @@
 import { FaTrash, FaCheckCircle } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import Swal from "sweetalert2";
 
 function Checkout() {

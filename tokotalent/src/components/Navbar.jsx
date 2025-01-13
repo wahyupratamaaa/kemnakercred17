@@ -25,7 +25,7 @@ const Navbar = () => {
           <h1 className="text-2xl font-bold text-gray-600 cursor-pointer flex self-center gap-2">
             Madura24Jam <TfiTimer />
           </h1>
-          <span className="text-sm font-medium text-gray-500">
+          <span className="text-sm font-medium text-gray-400">
             Hey wahyupratama!
           </span>
         </div>
